@@ -45,4 +45,8 @@ public class Bus {
         return this.passengers.remove(0);
     }
 
+    public void pickUpFromStop(BusStop busStop) {
+        getOnBus(busStop.removePersonFromQue());
+    }
+
 }
